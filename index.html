@@ -1,0 +1,268 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Magic Ring</title>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,600;12..96,800&family=Figtree:wght@400;500;600;700&family=IBM+Plex+Mono:wght@500;600&display=swap">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<svg width="0" height="0" style="position:absolute" aria-hidden="true" focusable="false"><defs>
+<symbol id="i-ring" viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><circle cx="12" cy="12" r="5.5"/><circle cx="12" cy="12" r="1.8"/></symbol>
+<symbol id="i-hook" viewBox="0 0 24 24"><path d="M4 20 18 6"/><path d="M18 6c1.2-1.7 3.4-1.4 3.4.3 0 1.1-1.2 1.6-2 1"/><path d="M7 17l2.5 2.5"/></symbol>
+<symbol id="i-yarn" viewBox="0 0 24 24"><circle cx="12" cy="12" r="8"/><path d="M5 9c4 2 10 2 14 0M4.5 13c5 2.5 10 2.5 15 0M8 4.8c3 4 3 10.400 0 14.400"/><path d="M18 18c2 .5 3 2 3 3"/></symbol>
+<symbol id="i-scissors" viewBox="0 0 24 24"><circle cx="6.500" cy="18" r="2.500"/><circle cx="17.500" cy="18" r="2.500"/><path d="M8.300 16.200 18 4M15.700 16.200 6 4"/></symbol>
+<symbol id="i-marker" viewBox="0 0 24 24"><circle cx="12" cy="12" r="7.500"/><circle cx="12" cy="12" r="3"/></symbol>
+<symbol id="i-needle" viewBox="0 0 24 24"><path d="M4 20 19 5"/><ellipse cx="18.300" cy="5.700" rx="1" ry="2.500" transform="rotate(45 18.300 5.700)"/></symbol>
+<symbol id="i-tape" viewBox="0 0 24 24"><rect x="3" y="7" width="18" height="10" rx="2"/><path d="M7 7v4M10 7v3M13 7v4M16 7v3M19 7v4"/></symbol>
+<symbol id="i-pin" viewBox="0 0 24 24"><path d="M12 22V7M8 4h8M12 4v3"/></symbol>
+<symbol id="i-counter" viewBox="0 0 24 24"><rect x="5" y="3" width="14" height="18" rx="3"/><rect x="8" y="6" width="8" height="4" rx="1"/><circle cx="12" cy="15.500" r="2.200"/></symbol>
+<symbol id="i-kit" viewBox="0 0 24 24"><path d="M3 8l9-5 9 5v9l-9 5-9-5z"/><path d="M3 8l9 5 9-5M12 13v9"/></symbol>
+<symbol id="i-eye" viewBox="0 0 24 24"><circle cx="12" cy="12" r="7"/><circle cx="14" cy="10" r="2"/></symbol>
+<symbol id="i-fill" viewBox="0 0 24 24"><path d="M7 18h10a4 4 0 0 0 .8-7.900A5.500 5.500 0 0 0 7.300 9.500 4.300 4.300 0 0 0 7 18z"/></symbol>
+<symbol id="i-bag" viewBox="0 0 24 24"><path d="M5 9h14l-1 11H6z"/><path d="M9 9V7a3 3 0 0 1 6 0v2"/></symbol>
+<symbol id="i-hat" viewBox="0 0 24 24"><path d="M4 16a8 8 0 0 1 16 0z"/><path d="M3 16h18v3H3z"/><circle cx="12" cy="5.500" r="1.800"/></symbol>
+<symbol id="i-blanket" viewBox="0 0 24 24"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="M9 5v14M15 5v14M3 10h18M3 14h18"/></symbol>
+<symbol id="i-toy" viewBox="0 0 24 24"><circle cx="12" cy="9" r="5"/><ellipse cx="12" cy="18.500" rx="5" ry="3.500"/><circle cx="7" cy="4.500" r="2"/><circle cx="17" cy="4.500" r="2"/></symbol>
+<symbol id="i-top" viewBox="0 0 24 24"><path d="M8 3 4 7l2.500 3L8 9v12h8V9l1.500 1L20 7l-4-4a4 4 0 0 1-8 0z"/></symbol>
+<symbol id="i-scarf" viewBox="0 0 24 24"><rect x="8.500" y="3" width="7" height="14" rx="1"/><path d="M10 17v4M12 17v4M14 17v4"/></symbol>
+<symbol id="i-home" viewBox="0 0 24 24"><path d="M6 11h12l-1.500 9h-9z"/><path d="M12 11V5"/><path d="M12 8c-1-2.500-3.500-3-5-2 .5 2.500 3 3.500 5 2zM12 8c1-2.500 3.500-3 5-2-.5 2.500-3 3.500-5 2z"/></symbol>
+<symbol id="i-mat" viewBox="0 0 24 24"><rect x="3" y="3" width="18" height="18" rx="2"/><path d="M12 3v18M3 12h18"/></symbol>
+<symbol id="i-cart" viewBox="0 0 24 24"><path d="M3 4h3l2.500 11h9.500l2-8H7"/><circle cx="10" cy="19.500" r="1.500"/><circle cx="17" cy="19.500" r="1.500"/></symbol>
+<symbol id="i-heart" viewBox="0 0 24 24"><path d="M12 20s-7-4.600-7-10a4 4 0 0 1 7-2.500A4 4 0 0 1 19 10c0 5.400-7 10-7 10z"/></symbol>
+<symbol id="i-comment" viewBox="0 0 24 24"><path d="M4 5h16v11H9l-5 4z"/></symbol>
+<symbol id="i-link" viewBox="0 0 24 24"><path d="M10 14a4 4 0 0 0 5.700 0l3-3a4 4 0 0 0-5.700-5.700l-1 1"/><path d="M14 10a4 4 0 0 0-5.700 0l-3 3a4 4 0 0 0 5.700 5.700l1-1"/></symbol>
+<symbol id="i-store" viewBox="0 0 24 24"><path d="M4 9l1.500-5h13L20 9"/><path d="M4 9v11h16V9"/><path d="M4 9a2.700 2.700 0 0 0 5.300 0 2.700 2.700 0 0 0 5.400 0A2.700 2.700 0 0 0 20 9"/></symbol>
+<symbol id="i-calendar" viewBox="0 0 24 24"><rect x="4" y="5" width="16" height="15" rx="2"/><path d="M8 3v4M16 3v4M4 10h16"/></symbol>
+<symbol id="i-users" viewBox="0 0 24 24"><circle cx="9" cy="8" r="3.500"/><path d="M2.500 20c0-3.600 2.900-6 6.500-6s6.500 2.400 6.500 6"/><circle cx="17" cy="9" r="2.500"/><path d="M17 14c2.800 0 4.500 1.800 4.500 4.500"/></symbol>
+<symbol id="i-play" viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="M10 8.500v7l6-3.500z"/></symbol>
+<symbol id="i-search" viewBox="0 0 24 24"><circle cx="11" cy="11" r="6.500"/><path d="M16 16l4.500 4.500"/></symbol>
+<symbol id="i-info" viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="M12 11v5M12 8h.01"/></symbol>
+<symbol id="i-check" viewBox="0 0 24 24"><path d="M5 12.500l4.500 4.500L19 7"/></symbol>
+</defs></svg>
+
+<header class="mast">
+  <div class="mast-in">
+    <button class="brand" data-go="home" aria-label="Magic Ring home"><svg class="ico" aria-hidden="true"><use href="#i-ring"/></svg>Magic Ring</button>
+    <button class="btn small cart-btn" id="cartBtn" aria-label="Open cart"><svg class="ico" aria-hidden="true"><use href="#i-cart"/></svg><span>Cart</span><b id="cartCount">0</b></button>
+  </div>
+  <nav class="tabs" aria-label="Sections">
+    <button data-go="home">Home</button>
+    <button data-go="patterns">Patterns</button>
+    <button data-go="projects">Projects</button>
+    <button data-go="learn">Learn</button>
+    <button data-go="kit">Starter kit</button>
+    <button data-go="shop">Tool shop</button>
+    <button data-go="community">Community</button>
+    <button data-go="market">Marketplace</button>
+  </nav>
+</header>
+
+<main>
+<!-- HOME -->
+<section class="view" data-view="home">
+  <div class="hero">
+    <div>
+      <p class="eyebrow">Crochet, made easier</p>
+      <h1>Find a pattern. Make something you love.</h1>
+      <p class="lead">Patterns, row counters, lessons and a tool shop, all in one place.</p>
+      <div class="row">
+        <button class="btn primary" data-go="patterns">Browse patterns</button>
+        <button class="btn" data-go="kit">New to crochet?</button>
+      </div>
+    </div>
+    <div class="hero-pic" id="heroPic"></div>
+  </div>
+
+  <h2 class="home-h">Popular patterns</h2>
+  <div class="grid" id="homePats"></div>
+
+  <div class="more">
+    <span class="muted">Also here:</span>
+    <button class="btn small ghost" data-go="shop">Tool shop</button>
+    <button class="btn small ghost" data-go="community">Community</button>
+    <button class="btn small ghost" data-go="market">Marketplace</button>
+  </div>
+</section>
+
+<!-- PATTERNS -->
+<section class="view" data-view="patterns" hidden>
+  <div class="sec-head"><div><h2>Pattern library</h2><p>Search by what you want to make. Try “bag” and the library will ask which kind.</p></div></div>
+  <form id="patForm" class="searchbar" role="search">
+    <label class="sr-only" for="patQ">Search patterns</label>
+    <input id="patQ" type="search" placeholder="Search: bag, beanie, blanket, toy…" autocomplete="off">
+    <button class="btn primary" type="submit"><svg class="ico" aria-hidden="true"><use href="#i-search"/></svg>Search</button>
+  </form>
+  <div class="chips" id="patQuick" style="margin-top:12px" aria-label="Quick searches"></div>
+  <div id="patRefine"></div>
+  <div class="filters">
+    <div class="grp" role="group" aria-label="Level"><span class="lbl">Level</span>
+      <button class="chip" data-lv="all" aria-pressed="true">All</button><button class="chip" data-lv="Beginner" aria-pressed="false">Beginner</button><button class="chip" data-lv="Intermediate" aria-pressed="false">Intermediate</button><button class="chip" data-lv="Advanced" aria-pressed="false">Advanced</button></div>
+    <div class="grp" role="group" aria-label="Price"><span class="lbl">Price</span>
+      <button class="chip" data-cost="all" aria-pressed="true">All</button><button class="chip" data-cost="free" aria-pressed="false">Free</button><button class="chip" data-cost="paid" aria-pressed="false">Paid</button></div>
+  </div>
+  <p class="count" id="patCount" aria-live="polite"></p>
+  <div class="grid" id="patGrid"></div>
+</section>
+
+<!-- PROJECTS -->
+<section class="view" data-view="projects" hidden>
+  <div class="sec-head"><div><h2>Projects and counters</h2><p>Count rows and stitches for every make. Progress saves in this browser, so you can close the page and pick up later.</p></div>
+    <button class="btn primary" id="newProjBtn">New project</button></div>
+  <div class="stack">
+    <form id="projForm" class="panel" hidden>
+      <h3>New project</h3>
+      <div class="form-grid">
+        <div class="field wide"><label for="pjName">Project name</label><input id="pjName" required maxlength="60" placeholder="e.g. Blue beanie for Kojo"></div>
+        <div class="field"><label for="pjRows">Total rows or rounds</label><input id="pjRows" type="number" min="0" max="999" value="30"></div>
+        <div class="field"><label for="pjSts">Stitches per row</label><input id="pjSts" type="number" min="0" max="999" value="40"></div>
+      </div>
+      <div class="row" style="margin-top:14px"><button class="btn primary" type="submit">Create project</button><button class="btn ghost" type="button" id="pjCancel">Cancel</button></div>
+    </form>
+    <div class="grid wide" id="projList"></div>
+  </div>
+</section>
+<!-- LEARN -->
+<section class="view" data-view="learn" hidden>
+  <div class="sec-head"><div><h2>Learn</h2><p>Short written lessons, each with a link to video tutorials on YouTube. Then join a live session and ask questions.</p></div></div>
+  <div class="chips" id="lessonFilters" role="group" aria-label="Lesson level">
+    <button class="chip" data-llv="all" aria-pressed="true">All lessons</button>
+    <button class="chip" data-llv="Beginner" aria-pressed="false">Beginner</button>
+    <button class="chip" data-llv="Intermediate" aria-pressed="false">Intermediate</button>
+  </div>
+  <div class="grid" id="lessonGrid" style="margin-top:16px"></div>
+  <div class="group-title"><h3>Live sessions</h3><span class="muted small" id="tzNote"></span></div>
+  <div class="grid wide" id="sessionList"></div>
+  <div id="myRegs" style="margin-top:18px"></div>
+</section>
+
+<!-- STARTER KIT -->
+<section class="view" data-view="kit" hidden>
+  <div class="sec-head"><div><h2>Starter kit</h2><p>You need less than you think. Here is how to match a hook to your yarn, plus tips and size tables for your first projects.</p></div>
+    <button class="btn primary" data-go="shop"><svg class="ico" aria-hidden="true"><use href="#i-store"/></svg>Open the tool shop</button></div>
+  <div class="panel" style="margin-bottom:26px"><h3>Pins and markers</h3>
+    <p class="muted">Two kinds of pins show up in crochet. <b>Stitch markers</b> (small clips, rings or even safety pins) mark the first stitch of a round or a spot you need to find again, and are the first extra worth buying. <b>Blocking T-pins</b> hold a finished piece flat on a mat while it dries to the right size, which matters most for garments, lace and granny squares.</p></div>
+  <div class="two">
+      <div class="panel"><h3>Match a hook to your yarn</h3>
+        <div class="field"><label for="yarnPick">Yarn weight on the label</label><select id="yarnPick"></select></div>
+        <div id="yarnOut" style="margin-top:12px" aria-live="polite"></div></div>
+      <div class="panel"><h3>Beginner tips</h3>
+        <ul class="stack" style="margin:0;padding-left:1.2rem">
+          <li>Start with worsted weight (labelled 4 or medium) and a hook between 5.0 and 5.5 mm.</li>
+          <li>Pick one plain, light colour for your first few weeks so every stitch is easy to see.</li>
+          <li>Skip fluffy mohair and novelty yarn until you can spot your stitches by touch.</li>
+          <li>Use a safety pin or hair clip as a stitch marker until you buy a pack.</li>
+          <li>Leave safety eyes and stuffing for your first amigurumi.</li>
+          <li>Fabric feels stiff? Go up a hook size. Gaps and holes? Go down one.</li>
+        </ul></div>
+  </div>
+  <h3 style="margin-top:30px;margin-bottom:10px">Hook sizes</h3>
+  <div class="tbl-wrap"><table id="hookTable"></table></div>
+  <h3 style="margin-top:26px;margin-bottom:10px">Yarn weights and hook ranges</h3>
+  <div class="tbl-wrap"><table id="yarnTable"></table></div>
+  <p class="hint" style="margin-top:8px">Ranges follow the Craft Yarn Council standard. The label on your yarn is the better guide, and gauge matters more than the number on the hook.</p>
+</section>
+
+<!-- TOOL SHOP -->
+<section class="view" data-view="shop" hidden>
+  <div class="sec-head"><div><h2>Tool shop</h2><p>Hooks, yarn, pins and notions for every stage. Prices are sample prices in Ghana cedis (GH₵).</p></div></div>
+  <div class="filters">
+    <div class="grp" id="shopCats" role="group" aria-label="Category"></div>
+    <div class="field" style="min-width:200px;flex:1 1 200px"><label class="sr-only" for="shopQ">Search tools</label><input id="shopQ" type="search" placeholder="Search tools and yarn"></div>
+    <div class="field"><label class="sr-only" for="shopSort">Sort</label>
+      <select id="shopSort"><option value="feat">Featured</option><option value="lo">Price, low to high</option><option value="hi">Price, high to low</option></select></div>
+  </div>
+  <p class="count" id="shopCount" aria-live="polite"></p>
+  <div class="grid" id="shopGrid"></div>
+</section>
+<!-- COMMUNITY -->
+<section class="view" data-view="community" hidden>
+  <div class="sec-head"><div><h2>Community</h2><p>Share a finished make or a work in progress. Like, comment and pass the link on.</p></div></div>
+  <div class="proto-note"><svg class="ico" aria-hidden="true"><use href="#i-info"/></svg><span>Posts, likes and comments are saved in this browser only. Sharing between members needs the backend described at the bottom of the Home page.</span></div>
+  <div class="stack">
+    <form id="postForm" class="panel">
+      <h3>Share a make</h3>
+      <div class="form-grid">
+        <div class="field"><label for="meName">Your display name</label><input id="meName" maxlength="30" placeholder="Guest crocheter"></div>
+        <div class="field"><label for="postTag">What is it?</label><select id="postTag"><option>Finished make</option><option>Work in progress</option><option>Gift</option><option>First project</option></select></div>
+        <div class="field wide"><label for="postCap">Caption</label><textarea id="postCap" required maxlength="400" placeholder="Yarn, hook size, pattern, what you learned"></textarea></div>
+        <div class="field wide"><label for="postPhoto">Photo (optional)</label><input id="postPhoto" type="file" accept="image/*"><img id="postPrev" alt="Preview of the chosen photo" hidden style="max-width:200px;border-radius:var(--r-sm);margin-top:6px"></div>
+      </div>
+      <div class="row" style="margin-top:14px"><button class="btn primary" type="submit">Post to community</button></div>
+    </form>
+    <div class="feed" id="feed"></div>
+  </div>
+</section>
+
+<!-- MARKETPLACE -->
+<section class="view" data-view="market" hidden>
+  <div class="sec-head"><div><h2>Marketplace</h2><p>Patterns written by independent designers. Buy one to unlock the full instructions, or list your own.</p></div>
+    <button class="btn" id="sellBtn">Sell a pattern</button></div>
+  <div class="stack">
+    <form id="sellForm" class="panel" hidden>
+      <h3>List a pattern for sale</h3>
+      <div class="form-grid">
+        <div class="field wide"><label for="slTitle">Pattern name</label><input id="slTitle" required maxlength="60"></div>
+        <div class="field"><label for="slCat">Category</label><select id="slCat"></select></div>
+        <div class="field"><label for="slType">Type (e.g. tote, beanie)</label><input id="slType" required maxlength="30"></div>
+        <div class="field"><label for="slLevel">Skill level</label><select id="slLevel"><option>Beginner</option><option selected>Intermediate</option><option>Advanced</option></select></div>
+        <div class="field"><label for="slPrice">Price (GH₵)</label><input id="slPrice" type="number" min="5" max="500" step="1" value="25" required></div>
+        <div class="field"><label for="slYarn">Yarn</label><input id="slYarn" required maxlength="40" placeholder="e.g. Worsted cotton"></div>
+        <div class="field"><label for="slHook">Hook size (mm)</label><input id="slHook" type="number" min="1.5" max="15" step="0.25" value="5" required></div>
+        <div class="field wide"><label for="slDesc">Description</label><textarea id="slDesc" required maxlength="500" placeholder="What the buyer will make and what is included"></textarea></div>
+      </div>
+      <p class="hint" style="margin-top:8px">Uploading the pattern PDF and paying out sales need a server, so this prototype only creates the listing.</p>
+      <div class="row" style="margin-top:12px"><button class="btn primary" type="submit">Publish listing</button><button class="btn ghost" type="button" id="sellCancel">Cancel</button></div>
+    </form>
+    <div class="filters" style="margin-block:0">
+      <div class="field" style="flex:1 1 220px"><label class="sr-only" for="mkQ">Search paid patterns</label><input id="mkQ" type="search" placeholder="Search paid patterns"></div>
+      <div class="field"><label class="sr-only" for="mkCat">Category</label><select id="mkCat"></select></div>
+      <div class="field"><label class="sr-only" for="mkSort">Sort</label><select id="mkSort"><option value="feat">Featured</option><option value="lo">Price, low to high</option><option value="hi">Price, high to low</option></select></div>
+    </div>
+    <p class="count" id="mkCount" aria-live="polite" style="margin:0"></p>
+    <div class="grid" id="mkGrid"></div>
+    <div><div class="group-title" style="margin-top:6px"><h3>Your listings</h3></div><div class="grid" id="mkMine"></div></div>
+    <div><div class="group-title" style="margin-top:6px"><h3>Your purchases</h3></div><div class="grid" id="mkBought"></div></div>
+  </div>
+</section>
+</main>
+
+<footer class="foot">
+  <p>Magic Ring is a front-end prototype built with HTML, CSS and JavaScript. Sample designers, prices and sessions are made up.</p>
+  <details><summary>How this prototype works, and what a live platform needs</summary>
+    <ul>
+      <li>Counters, projects, cart, posts and listings are saved with the browser's local storage, so they stay on this device.</li>
+      <li>Accounts and shared content (posts, comments, listings) need a backend and a database.</li>
+      <li>Payments for patterns and tools need a payment provider such as a card or mobile money gateway.</li>
+      <li>Live sessions need a video service. Video lessons here link out to YouTube search results.</li>
+    </ul>
+  </details>
+</footer>
+
+<dialog id="patDlg" class="modal" aria-label="Pattern details"><div class="dlg-in" id="patBody"></div></dialog>
+
+<dialog id="regDlg" class="small-modal" aria-label="Register for a live session">
+  <form class="dlg-in" id="regForm">
+    <div class="dlg-bar"><h3 id="regTitle">Register</h3><button class="btn small ghost" type="button" data-close="regDlg">Close</button></div>
+    <p class="muted small" id="regWhen"></p>
+    <div class="field"><label for="regName">Your name</label><input id="regName" required maxlength="40"></div>
+    <div class="field"><label for="regEmail">Email</label><input id="regEmail" type="email" required maxlength="80" placeholder="you@example.com"></div>
+    <button class="btn primary" type="submit">Save my place</button>
+  </form>
+</dialog>
+
+<dialog id="cartDlg" class="sheet" aria-label="Cart">
+  <div class="dlg-in">
+    <div class="dlg-bar"><h3>Your cart</h3><button class="btn small ghost" type="button" data-close="cartDlg">Close</button></div>
+    <div id="cartBody"></div>
+  </div>
+</dialog>
+
+<div class="toast" id="toast" role="status" aria-live="polite"></div>
+
+
+<script src="photos.js"></script>
+<script src="app.js"></script>
+</body>
+</html>
